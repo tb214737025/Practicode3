@@ -1,35 +1,9 @@
-// import axios from 'axios';
-
-// const apiUrl = "https://localhost:5096"
-
-// export default {
-//   getTasks: async () => {
-//     const result = await axios.get(`${apiUrl}/items`)    
-//     return result.data;
-//   },
-
-
-//   addTask: async(name)=>{
-//     console.log('addTask', name)
-//     //TODO
-//     return {};
-//   },
-
-//   setCompleted: async(id, isComplete)=>{
-//     console.log('setCompleted', {id, isComplete})
-//     //TODO
-//     return {};
-//   },
-
-//   deleteTask:async()=>{
-//     console.log('deleteTask')
-//   }
-// };
 
 
 import axios from 'axios';
-axios.defaults.baseURL =  "http://localhost:5096";
-// const apiUrl = "http://localhost:5096"
+
+axios.defaults.baseURL =  env.REACT_APP_APIURL;
+
 
 export default {
   getTasks: async () => {
