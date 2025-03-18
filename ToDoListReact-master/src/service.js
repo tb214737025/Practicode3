@@ -2,7 +2,8 @@
 
 import axios from 'axios';
 
-axios.defaults.baseURL =  env.REACT_APP_APIURL;
+axios.defaults.baseURL = process.env.REACT_APP_APIURL
+;
 
 
 export default {
